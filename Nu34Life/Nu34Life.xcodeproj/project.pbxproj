@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C2A5ED32375354200F85760 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A5ED22375354100F85760 /* Structures.swift */; };
+		8C2A5ED52375373900F85760 /* NutritionistProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A5ED42375373900F85760 /* NutritionistProfile.swift */; };
+		8C2A5ED72375374900F85760 /* PatientProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A5ED62375374900F85760 /* PatientProfile.swift */; };
+		8C5389662371543400767944 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8C5389652371543400767944 /* Alamofire */; };
+		8C538969237154A700767944 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8C538968237154A700767944 /* SwiftyJSON */; };
+		8C53896B237154C000767944 /* MainNutritionist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C53896A237154C000767944 /* MainNutritionist.swift */; };
+		8CD4464C23729325001C8EAC /* NutritionistPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4464B23729325001C8EAC /* NutritionistPatient.swift */; };
+		8CD4464E2373C0D9001C8EAC /* MainPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4464D2373C0D9001C8EAC /* MainPatient.swift */; };
+		8CD446502373E5DF001C8EAC /* CreatePatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4464F2373E5DF001C8EAC /* CreatePatient.swift */; };
+		8CD446522373E616001C8EAC /* CreateNutritionist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD446512373E616001C8EAC /* CreateNutritionist.swift */; };
+		8CF8CA61236F93350052C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8CA60236F93350052C1CC /* AppDelegate.swift */; };
+		8CF8CA63236F93350052C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8CA62236F93350052C1CC /* SceneDelegate.swift */; };
+		8CF8CA66236F93350052C1CC /* Nu34Life.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8CA64236F93350052C1CC /* Nu34Life.xcdatamodeld */; };
+		8CF8CA68236F93350052C1CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8CA67236F93350052C1CC /* ContentView.swift */; };
+		8CF8CA6A236F933A0052C1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8CA69236F933A0052C1CC /* Assets.xcassets */; };
+		8CF8CA6D236F933A0052C1CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8CA6C236F933A0052C1CC /* Preview Assets.xcassets */; };
+		8CF8CA70236F933A0052C1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8CA6E236F933A0052C1CC /* LaunchScreen.storyboard */; };
+		8CF8CA78236FA0690052C1CC /* LogInNutricionista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8CA77236FA0690052C1CC /* LogInNutricionista.swift */; };
+		8CF8CA7A236FA0800052C1CC /* LogInPaciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8CA79236FA0800052C1CC /* LogInPaciente.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C2A5ED22375354100F85760 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		8C2A5ED42375373900F85760 /* NutritionistProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionistProfile.swift; sourceTree = "<group>"; };
+		8C2A5ED62375374900F85760 /* PatientProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfile.swift; sourceTree = "<group>"; };
+		8C53896A237154C000767944 /* MainNutritionist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNutritionist.swift; sourceTree = "<group>"; };
+		8CD4464B23729325001C8EAC /* NutritionistPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionistPatient.swift; sourceTree = "<group>"; };
+		8CD4464D2373C0D9001C8EAC /* MainPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPatient.swift; sourceTree = "<group>"; };
+		8CD4464F2373E5DF001C8EAC /* CreatePatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePatient.swift; sourceTree = "<group>"; };
+		8CD446512373E616001C8EAC /* CreateNutritionist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNutritionist.swift; sourceTree = "<group>"; };
+		8CF8CA5D236F93350052C1CC /* Nu34Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nu34Life.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF8CA60236F93350052C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CF8CA62236F93350052C1CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CF8CA65236F93350052C1CC /* Nu34Life.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nu34Life.xcdatamodel; sourceTree = "<group>"; };
+		8CF8CA67236F93350052C1CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CF8CA69236F933A0052C1CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CF8CA6C236F933A0052C1CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CF8CA6F236F933A0052C1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CF8CA71236F933A0052C1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF8CA77236FA0690052C1CC /* LogInNutricionista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInNutricionista.swift; sourceTree = "<group>"; };
+		8CF8CA79236FA0800052C1CC /* LogInPaciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPaciente.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CF8CA5A236F93350052C1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C538969237154A700767944 /* SwiftyJSON in Frameworks */,
+				8C5389662371543400767944 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CD446532373E87A001C8EAC /* PacientView */ = {
+			isa = PBXGroup;
+			children = (
+				8CF8CA79236FA0800052C1CC /* LogInPaciente.swift */,
+				8CD4464F2373E5DF001C8EAC /* CreatePatient.swift */,
+				8CD4464D2373C0D9001C8EAC /* MainPatient.swift */,
+				8C2A5ED62375374900F85760 /* PatientProfile.swift */,
+			);
+			path = PacientView;
+			sourceTree = "<group>";
+		};
+		8CD446542373E8A5001C8EAC /* NutritionistView */ = {
+			isa = PBXGroup;
+			children = (
+				8CF8CA77236FA0690052C1CC /* LogInNutricionista.swift */,
+				8CD446512373E616001C8EAC /* CreateNutritionist.swift */,
+				8C53896A237154C000767944 /* MainNutritionist.swift */,
+				8CD4464B23729325001C8EAC /* NutritionistPatient.swift */,
+				8C2A5ED42375373900F85760 /* NutritionistProfile.swift */,
+			);
+			path = NutritionistView;
+			sourceTree = "<group>";
+		};
+		8CF8CA54236F93350052C1CC = {
+			isa = PBXGroup;
+			children = (
+				8CF8CA5F236F93350052C1CC /* Nu34Life */,
+				8CF8CA5E236F93350052C1CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF8CA5E236F93350052C1CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF8CA5D236F93350052C1CC /* Nu34Life.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CF8CA5F236F93350052C1CC /* Nu34Life */ = {
+			isa = PBXGroup;
+			children = (
+				8CD446542373E8A5001C8EAC /* NutritionistView */,
+				8CD446532373E87A001C8EAC /* PacientView */,
+				8CF8CA60236F93350052C1CC /* AppDelegate.swift */,
+				8CF8CA67236F93350052C1CC /* ContentView.swift */,
+				8CF8CA62236F93350052C1CC /* SceneDelegate.swift */,
+				8CF8CA69236F933A0052C1CC /* Assets.xcassets */,
+				8CF8CA6E236F933A0052C1CC /* LaunchScreen.storyboard */,
+				8CF8CA71236F933A0052C1CC /* Info.plist */,
+				8CF8CA64236F93350052C1CC /* Nu34Life.xcdatamodeld */,
+				8CF8CA6B236F933A0052C1CC /* Preview Content */,
+				8C2A5ED22375354100F85760 /* Structures.swift */,
+			);
+			path = Nu34Life;
+			sourceTree = "<group>";
+		};
+		8CF8CA6B236F933A0052C1CC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8CF8CA6C236F933A0052C1CC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CF8CA5C236F93350052C1CC /* Nu34Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF8CA74236F933A0052C1CC /* Build configuration list for PBXNativeTarget "Nu34Life" */;
+			buildPhases = (
+				8CF8CA59236F93350052C1CC /* Sources */,
+				8CF8CA5A236F93350052C1CC /* Frameworks */,
+				8CF8CA5B236F93350052C1CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nu34Life;
+			packageProductDependencies = (
+				8C5389652371543400767944 /* Alamofire */,
+				8C538968237154A700767944 /* SwiftyJSON */,
+			);
+			productName = Nu34Life;
+			productReference = 8CF8CA5D236F93350052C1CC /* Nu34Life.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF8CA55236F93350052C1CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Luisger's Shop";
+				TargetAttributes = {
+					8CF8CA5C236F93350052C1CC = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 8CF8CA58236F93350052C1CC /* Build configuration list for PBXProject "Nu34Life" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CF8CA54236F93350052C1CC;
+			packageReferences = (
+				8C5389642371543400767944 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8C538967237154A700767944 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 8CF8CA5E236F93350052C1CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CF8CA5C236F93350052C1CC /* Nu34Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CF8CA5B236F93350052C1CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF8CA70236F933A0052C1CC /* LaunchScreen.storyboard in Resources */,
+				8CF8CA6D236F933A0052C1CC /* Preview Assets.xcassets in Resources */,
+				8CF8CA6A236F933A0052C1CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF8CA59236F93350052C1CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD446522373E616001C8EAC /* CreateNutritionist.swift in Sources */,
+				8CF8CA61236F93350052C1CC /* AppDelegate.swift in Sources */,
+				8CF8CA66236F93350052C1CC /* Nu34Life.xcdatamodeld in Sources */,
+				8CF8CA68236F93350052C1CC /* ContentView.swift in Sources */,
+				8C2A5ED52375373900F85760 /* NutritionistProfile.swift in Sources */,
+				8C53896B237154C000767944 /* MainNutritionist.swift in Sources */,
+				8CF8CA78236FA0690052C1CC /* LogInNutricionista.swift in Sources */,
+				8C2A5ED72375374900F85760 /* PatientProfile.swift in Sources */,
+				8CD4464C23729325001C8EAC /* NutritionistPatient.swift in Sources */,
+				8C2A5ED32375354200F85760 /* Structures.swift in Sources */,
+				8CD4464E2373C0D9001C8EAC /* MainPatient.swift in Sources */,
+				8CD446502373E5DF001C8EAC /* CreatePatient.swift in Sources */,
+				8CF8CA7A236FA0800052C1CC /* LogInPaciente.swift in Sources */,
+				8CF8CA63236F93350052C1CC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CF8CA6E236F933A0052C1CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF8CA6F236F933A0052C1CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CF8CA72236F933A0052C1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CF8CA73236F933A0052C1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CF8CA75236F933A0052C1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Nu34Life/Preview Content\"";
+				DEVELOPMENT_TEAM = 3B8DRKWHVX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Nu34Life/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nutrilab.Nu34Life;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CF8CA76236F933A0052C1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Nu34Life/Preview Content\"";
+				DEVELOPMENT_TEAM = 3B8DRKWHVX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Nu34Life/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nutrilab.Nu34Life;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF8CA58236F93350052C1CC /* Build configuration list for PBXProject "Nu34Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF8CA72236F933A0052C1CC /* Debug */,
+				8CF8CA73236F933A0052C1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF8CA74236F933A0052C1CC /* Build configuration list for PBXNativeTarget "Nu34Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF8CA75236F933A0052C1CC /* Debug */,
+				8CF8CA76236F933A0052C1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C5389642371543400767944 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+		8C538967237154A700767944 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C5389652371543400767944 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C5389642371543400767944 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8C538968237154A700767944 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C538967237154A700767944 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8CF8CA64236F93350052C1CC /* Nu34Life.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CF8CA65236F93350052C1CC /* Nu34Life.xcdatamodel */,
+			);
+			currentVersion = 8CF8CA65236F93350052C1CC /* Nu34Life.xcdatamodel */;
+			path = Nu34Life.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8CF8CA55236F93350052C1CC /* Project object */;
+}
