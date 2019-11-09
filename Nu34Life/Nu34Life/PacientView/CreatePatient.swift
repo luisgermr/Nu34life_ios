@@ -20,13 +20,19 @@ struct CreatePatient: View {
     
     var body: some View {
         VStack{
-            TextField("Nombres", text: $name).padding(.bottom).modifier(FieldStyle())
-            TextField("Apellidos", text: $lastName).padding(.bottom).modifier(FieldStyle())
-            TextField("Fecha de Nacimiento", text: $birthday).padding(.bottom).modifier(FieldStyle())
-            TextField("Correo Electronico", text: $email).padding(.bottom).modifier(FieldStyle())
-            TextField("Contrasena", text: $password).textContentType(.password).padding(.bottom).modifier(FieldStyle())
-            TextField("Celular", text: $cellphone).padding(.bottom).modifier(FieldStyle())
-            TextField("Id de Nutricionista", text: $nutritionistId).padding(.bottom).modifier(FieldStyle())
+            TextField("Nombres", text: $name).modifier(FieldStyle())
+            //Divider()
+            TextField("Apellidos", text: $lastName).modifier(FieldStyle())
+            //Divider()
+            TextField("Fecha de Nacimiento", text: $birthday).modifier(FieldStyle())
+            //Divider()
+            TextField("Correo Electronico", text: $email).modifier(FieldStyle())
+            //Divider()
+            TextField("Contrasena", text: $password).modifier(FieldStyle())
+            //Divider()
+            TextField("Celular", text: $cellphone).modifier(FieldStyle())
+            //Divider()
+            TextField("Id de Nutricionista", text: $nutritionistId).modifier(FieldStyle())
             HStack{
                 NavigationLink(destination: MainPatient()){
                     Text("Registrarse")

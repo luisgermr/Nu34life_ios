@@ -34,11 +34,13 @@ struct card : View{
 }
 
 struct MainNutritionist: View {
-    @State var showingProfile = false
        
        var profileButton: some View {
         NavigationLink(destination: NutritionistProfile()){
-            Image("ProfileIcon")
+            Image(systemName: "person.crop.circle")
+            .imageScale(.large)
+            .accessibility(label: Text("User Profile"))
+            .padding()
         }
        }
     var body: some View {

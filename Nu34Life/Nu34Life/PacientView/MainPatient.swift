@@ -13,7 +13,10 @@ struct MainPatient: View {
     
     var profileButton: some View {
      NavigationLink(destination: PatientProfile()){
-        Image("ProfileIcon")
+        Image(systemName: "person.crop.circle")
+        .imageScale(.large)
+        .accessibility(label: Text("User Profile"))
+        .padding()
      }
     }
     
@@ -22,13 +25,22 @@ struct MainPatient: View {
             HStack{
                 Text("Hoy").padding(.leading, 20)
                 Spacer()
-            }
-            Image("background").resizable().scaledToFit()
+            }.padding(.top, 50).padding(.bottom, 30)
+            Image("background").resizable().scaledToFit().padding(.leading, 10	).padding(.trailing, 10)
             HStack{
                 Spacer()
             Button(action: {}){
                 Text("Ver mas").bold()
             }
+            }.padding(.top , 50).padding(.trailing, 20).padding(.bottom, 50)
+            
+            HStack{
+                Spacer()
+                Spacer()
+                Spacer()
+            }
+            Button(action: {}){
+                Text("Mostrar mas dias").bold()
             }
             Spacer()
         }.navigationBarItems(trailing: profileButton).navigationBarBackButtonHidden(true).navigationBarTitle("MainPatient",displayMode: .inline)

@@ -14,8 +14,7 @@ import SwiftyJSON
 struct FieldStyle: ViewModifier{
     func body(content: Content)-> some View{
         return content
-            .padding(.leading, 30)
-            .padding(.bottom, 30)
+            .padding(.leading, 30).padding(.vertical, 15)
     }
 }
 struct NutritionistCreate{
@@ -106,6 +105,7 @@ class observerGetPatients : ObservableObject{
                 self.datas.append(datatype(id: i.1["id"].intValue, name: i.1["name"].stringValue, lastName: i.1["lastName"].stringValue))
                 print(i.1)
             }
+            patients = self.datas
         }
     }
 }

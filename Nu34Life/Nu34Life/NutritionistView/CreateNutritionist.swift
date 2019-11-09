@@ -16,19 +16,26 @@ struct CreateNutritionist: View {
     @State var password = ""
     @State var cellphone = ""
     var body: some View {
+        
             VStack{
-                TextField("Nombres", text: $name).padding(.bottom).modifier(FieldStyle())
-                TextField("Apellidos", text: $lastName).padding(.bottom).modifier(FieldStyle())
-                TextField("Fecha de Nacimiento", text: $birthday).padding(.bottom).modifier(FieldStyle())
-                TextField("Email", text: $email).padding(.bottom).modifier(FieldStyle())
-                TextField("Contrasena", text: $password).textContentType(.password).padding(.bottom).modifier(FieldStyle())
-                TextField("Celular", text: $cellphone).padding(.bottom).modifier(FieldStyle())
+                TextField("Nombres", text: $name).modifier(FieldStyle())
+               
+                TextField("Apellidos", text: $lastName).modifier(FieldStyle())
+               
+                TextField("Fecha de Nacimiento", text: $birthday).modifier(FieldStyle())
+                //Divider()
+                TextField("Email", text: $email).modifier(FieldStyle())
+               // Divider()
+                TextField("Contrasena", text: $password).modifier(FieldStyle())
+                //Divider()
+                TextField("Celular", text: $cellphone).modifier(FieldStyle())
                 HStack{
                     NavigationLink(destination: MainNutritionist()){
                         Text("Registrase")
                     }
-                }
+        
             }.navigationBarTitle(Text("Registro Nutricionista"), displayMode: .automatic).navigationBarBackButtonHidden(false)
+    }
     }
 }
 
